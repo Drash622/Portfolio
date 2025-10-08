@@ -90,3 +90,68 @@ tbody tr:hover {
         padding: 8px;
     }
 }
+
+/* En-tête principale */
+.custom-header {
+    background-color: #1abc9c; /* vert turquoise */
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid #000;
+  }
+  
+  .header-cell {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+    position: relative;
+  }
+  
+  .header-cell a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+  }
+  /* Supprimer toutes les bordures du tableau */
+.table,
+.table th,
+.table td,
+.table thead tr {
+  border: none !important;
+}
+
+/* Uniformiser le fond d’en-tête */
+.custom-header {
+  background-color: #1abc9c; /* turquoise */
+}
+
+.header-cell {
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+/* Supprimer soulignement du lien + garder texte blanc */
+.header-cell a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* Petites bandes colorées en dessous de chaque colonne */
+.header-prog::after,
+.header-reseau::after,
+.header-connecter::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+
